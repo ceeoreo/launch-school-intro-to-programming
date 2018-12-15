@@ -18,3 +18,12 @@ lab_array.each do |item|
 		puts "No lab here"
 	end
 end
+
+########################
+
+
+def execute(&block)
+  block.call
+end
+
+execute { puts "Hello from inside the execute method!" }
